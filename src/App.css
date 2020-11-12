@@ -1,0 +1,11 @@
+*{
+  margin: 0%;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  height: hidden;
+  overflow: auto;
+}

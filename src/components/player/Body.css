@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@100;400&display=swap');
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.body {
+    flex: 0.90;
+    height: 100vh;
+    color: white;
+    padding:30px;
+
+
+
+
+    background: linear-gradient(270deg, #2929d5, #5d24ba, #6c4ebb);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.body__info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body__info > img{
+    height: 15vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.body__infoText {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.body__infoText > strong {
+    margin-left: 3px;
+    font-weight: 900;
+}
+.body__infoText > h2 {
+    font-size: 48px;
+    font-family: 'Raleway';
+}
+
+.body__infoText > p {
+    font-size: 14px;
+    font-family: 'Roboto';
+    margin-left: 4px;
+}
+
+.body__shuffle {
+    font-size: 40px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body__shuffle:hover, .body__icons > .MuiSvgIcon-root:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
